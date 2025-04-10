@@ -46,8 +46,62 @@ nav {
 }
   
 .hero h1 span {
-    color: #007bff;
+    color: #024fa1;
 }
 
 
+/* ------------- About Section styles ------------- */
+
+
+.about {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+  
+.about .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+  
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+  
+.about p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .nav-links li {
+      margin-bottom: 0.5rem;
+    }
+  
+    .hero, .about {
+      padding: 2rem 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+  
+    .about h2 {
+      font-size: 1.5rem;
+    }
+}
   
