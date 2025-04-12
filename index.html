@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <header>
     <nav>
       <div class="logo">Habib A. Mangoranda</div>
-      <ul class="nav-links">
+      <div class="menu-toggle" id="menuToggle">☰</div>
+      <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button id="darkModeToggle">🌙</button>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Hello, I'm <span>Habib A. Mangoranda</span></h1>
-    <p>
-      I am a student at Mindanao State University, currently pursuing a
-      Bachelor of Science in Information Technology (BSIT) with a major in
-      Database System.
-    </p>
+  <section class="hero reveal">
+    <div class="hero-content">
+      <img src="(1).jpg" alt="Profile Photo" class="profile-img" />
+      <div class="hero-text">
+        <h1>Hello, I'm </h1>
+        <h1><span>Habib A. Mangoranda</span></h1>
+        <p>
+          I am a student at Mindanao State University, currently pursuing a
+          Bachelor of Science in Information Technology (BSIT) with a major in Database System.
+        </p>
+      </div>
+    </div>
   </section>
+  
 
-  <section id="about" class="about">
+  <section id="about" class="about reveal">
     <div class="container">
       <h2>About Me</h2>
       <p>
@@ -43,46 +49,53 @@
     </div>
   </section>
 
-  <section id="projects" class="projects">
+  <section id="projects" class="projects reveal">
     <div class="container">
       <h2>My Projects</h2>
       <div class="project-grid">
-        
         <div class="project-card">
-            <h3>Project 1 - Inventory System</h3>
-          <p>Soon Inventory System will be Grocery System</p>
+          <h3>Inventory Management System</h3>
+          <p>A simple system made using Python that manages stock and tracks inventory changes.</p>
         </div>
-        
         <div class="project-card">
-          <h3>Project 2 - First Portfolio</h3>
-          <p>Practicing HTML, CSS, and JAVA Script</p>
+          <h3>Portfolio Website</h3>
+          <p>Practicing HTML, CSS, and JavaScript to create a personal portfolio website.</p>
         </div>
-
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
+  <section class="resume reveal">
+    <div class="container">
+      <h2>Resume</h2>
+      <p>You can download my resume below for more details on my academic background, skills, and projects.</p>
+      <a href="Habib-Mangoranda-Resume.pdf" class="btn-download" download>📄 Download Resume</a>
+    </div>
+  </section>  
+
+  <section id="contact" class="contact reveal">
     <div class="container">
       <h2>Contact Me</h2>
       <p>If you'd like to work together or just say hi, feel free to reach out!</p>
-  
       <form class="contact-form">
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />
         <textarea placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
-  
       <div class="socials">
-        <a href="mailto:your@email.com">📧 Email</a>
+        <a href="habibmangoranda15@gmail.com">📧 Email</a>
         <a href="https://github.com/yourusername" target="_blank">💻 GitHub</a>
         <a href="https://www.linkedin.com/in/yourusername" target="_blank">🔗 LinkedIn</a>
       </div>
     </div>
   </section>
-  
-  
+
+  <button id="scrollTopBtn">⬆</button>
+
+  <footer>
+    <p>&copy; 2025 Habib A. Mangoranda. All rights reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
